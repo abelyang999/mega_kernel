@@ -1,9 +1,6 @@
-@startmindmap
-
-'Compatible with OrgMode 
+@startmindmap test
 
 *[#Red]  核心轉換
-
 **[#Yellow] 國內會計
 *** A打頭交易
 **** 分行會計每日作業
@@ -97,4 +94,5 @@
 *** 中心會計及業務指標批次
 ****[#lightgreen] 各業務
 *****[#lightblue] DW (FTP OUT)
+'@endmindmap
 @endmindmap

@@ -1,0 +1,1 @@
+* 請在 vscode 按右鍵檢示 `test.puml` 能否顯示版本資訊以判斷 plantuml 是否正確安裝
