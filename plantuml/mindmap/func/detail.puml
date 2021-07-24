@@ -49,7 +49,12 @@
 ****[#lightgreen] 各業務
 *****[#lightblue] DW (FTP OUT)
 
+**[#Yellow] 中心會計(陳柏憲)
+*** 中心會計及業務指標批次
+****[#lightgreen] 各業務
+*****[#lightblue] DW (FTP OUT)
 
+left side:
 **[#Yellow] 存款會計
 *** 關係人啟帳 \n3D啟帳 \n外幣訂購現鈔啟帳 \n透支帳務啟帳 \n分行PATXN啟財務處帳 \nPAFDTL啟帳 \nPATXN資料補寫國內會計資負銷帳檔
 ****[#lightgreen] 一組\n - PB\n - CT\n - CK
@@ -90,9 +95,5 @@
 *** 聯往銷帳 \n聯往計息啟帳 \n產生MT950銷帳檔
 ****[#lightgreen] 各業務
 
-**[#Yellow] 中心會計(陳柏憲)
-*** 中心會計及業務指標批次
-****[#lightgreen] 各業務
-*****[#lightblue] DW (FTP OUT)
 '@endmindmap
 @endmindmap
