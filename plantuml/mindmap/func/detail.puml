@@ -16,7 +16,7 @@ rootNode {
     LineStyle 8.0;3.0
     LineColor red
     LineThickness 1.0
-    RoundCorner 0
+    RoundCorner 1
     Shadowing 0.0
     Fontsize 32
     BackgroundColor Red
