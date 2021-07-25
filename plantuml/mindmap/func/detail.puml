@@ -1,99 +1,149 @@
 @startmindmap test
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor red
+skinparam titleBackgroundColor Aqua-CadetBlue
 
-*[#Red]  核心轉換
-**[#Yellow] 國內會計
-*** A打頭交易
-**** 分行會計每日作業
-***** 程式1
-***** 程式2
-***** 程式3
-***** 程式4
-***** 程式5
-***** 程式6
-**** 帳務登打、查詢、列印、日終作業
-***** 程式1
-***** 程式2
-***** 程式3
-**** A700:聯行劃收付帳務登錄作業 
-***** 程式1
-***** 程式2
-***** 程式3
-***** 程式4
-***** 程式5
-***** 程式6
-***** 程式11
-***** 程式12
-***** 程式7
-***** 程式8
-***** 程式9
-***** 程式10
-**** 資負未銷明細補登處理情形或修改摘要三
-***** 程式1
-***** 程式2
+title 核心轉換心智圖
 
-*** ON-LINE啟帳副程式\n - ACPTOJRN \n - ACPAB24 \n - ACPTOTRD\n - SAPCSUMM \n - SACPSUMT
-****[#lightgreen] 進出口
-****[#lightgreen] 國內匯款
-****[#lightgreen] 授信
-****[#lightgreen] 國外匯兌
-****[#lightgreen] AS400信託系統
-****[#lightgreen] 財務處SUMMIT系統
-*** 臨欠本業務及跨業務銷帳作業
-****[#lightgreen] 各業務
-*****[#lightblue] DW (FTP OUT)
-*** 資負未銷明細檔相關:\n - A080\n - A380\n - A460\n - A550
-*** A700:聯行劃收付帳務登錄作業(同 A700-A) \n05A0:聯行劃收付帳務作業樣版維護"
-*** 0240:帳務上傳交易
-*** 0215:現金類科目即時餘額查詢
-*** 國內會計批次  (含營業稅、印花稅)(陳柏憲)
-****[#lightgreen] 各業務
-*****[#lightblue] DW (FTP OUT)
+<style>
+title {
+  HorizontalAlignment right
+  FontSize 32
+  FontColor blue
+}
+rootNode {
+    LineStyle 8.0;3.0
+    LineColor red
+    LineThickness 1.0
+    RoundCorner 0
+    Shadowing 0.0
+    Fontsize 32
+    BackgroundColor Red
+}
+mindmapDiagram {
+    
 
-**[#Yellow] 中心會計(陳柏憲)
-*** 中心會計及業務指標批次
-****[#lightgreen] 各業務
-*****[#lightblue] DW (FTP OUT)
+    '第4層後白底
+    :depth(4) {
+      BackGroundColor white
+    }
+}
+</style>
+
+* 核心轉換
+	*[#Yellow] 國內會計
+		* A打頭交易
+			* 分行會計每日作業
+				* 程式1
+				* 程式2
+				* 程式3
+				* 程式4
+					*_ 檔案1
+					*_ 檔案2
+				* 程式5
+				* 程式6
+			* 帳務登打、查詢、列印、日終作業
+				* 程式1
+				* 程式2
+				* 程式3
+			* A700:聯行劃收付帳務登錄作業 
+				* 程式1
+				* 程式2
+				* 程式3
+			* 資負未銷明細補登處理情形或修改摘要三
+				* 程式1
+				* 程式2
+
+		* ON-LINE啟帳副程式\n - ACPTOJRN \n - ACPAB24 \n - ACPTOTRD\n - SAPCSUMM \n - SACPSUMT
+			*[#lightgreen] 進出口
+			*[#lightgreen] 國內匯款
+			*[#lightgreen] 授信
+			*[#lightgreen] 國外匯兌
+			*[#lightgreen] AS400信託系統
+			*[#lightgreen] 財務處SUMMIT系統
+		* 臨欠本業務及跨業務銷帳作業
+			*[#lightgreen] 各業務
+				*[#lightblue] DW (FTP OUT)
+		* 資負未銷明細檔相關
+			* A080
+			* A380
+			* A460
+			* A550
+		* A700:聯行劃收付帳務登錄作業(同 A700-A)
+		* 05A0:聯行劃收付帳務作業樣版維護
+		* 0240:帳務上傳交易
+		* 0215:現金類科目即時餘額查詢
+		* 國內會計批次  (含營業稅、印花稅)(陳柏憲)
+			*[#lightgreen] 各業務
+				*[#lightblue] DW (FTP OUT)
 
 left side:
-**[#Yellow] 存款會計
-*** 關係人啟帳 \n3D啟帳 \n外幣訂購現鈔啟帳 \n透支帳務啟帳 \n分行PATXN啟財務處帳 \nPAFDTL啟帳 \nPATXN資料補寫國內會計資負銷帳檔
-****[#lightgreen] 一組\n - PB\n - CT\n - CK
-*****[#lightblue] 國內會計
-****[#lightgreen] 九組\n - ATM\n -票債券
-*****[#lightblue] 國內會計
-*** 颱風天作業處理
-****[#lightgreen] PATXN
-*** 聯行代收付清算作業\n - 0152等五支啟帳程式
-****[#lightgreen] CM \n - BIF \n - BIFBANK \n - BANKBK
-*** ATM現鈔提領啟帳
-****[#lightgreen] 九組ATM
-*****[#lightblue]  PATXN \n國外匯兌水單
-*** BTT交易
-*** 啟帳程式
-*** 其他ON-LINE交易
+	*[#Yellow] 中心會計(陳柏憲)
+		* 中心會計及業務指標批次
+			*[#lightgreen] 各業務
+				*[#lightblue] DW (FTP OUT)
 
-**[#Yellow] MT950銷帳(蔡欣怡)
-*** 接受MT950銷帳啟帳資料檔
-****[#lightgreen] MT950系統(設計十組)
-*****[#lightblue] 國內會計
-*** MT950銷帳啟帳
-****[#lightgreen] MT950系統(設計十組)
-*****[#lightblue] 國內會計
+	*[#Yellow] 存款會計
+		* 關係人啟帳 \n3D啟帳 \n外幣訂購現鈔啟帳 \n透支帳務啟帳 \n分行PATXN啟財務處帳 \nPAFDTL啟帳 \nPATXN資料補寫國內會計資負銷帳檔
+			*[#lightgreen] 一組\n - PB\n - CT\n - CK
+				*[#lightblue] 國內會計
+			*[#lightgreen] 九組
+				*[#lightblue] 國內會計
+			*[#lightgreen] ATM
+				*[#lightblue] 國內會計
+			*[#lightgreen] 票債券
+				*[#lightblue] 國內會計
+		* 颱風天作業處理
+			*[#lightgreen] PATXN
+		* 聯行代收付清算作業\n - 0152等五支啟帳程式
+			*[#lightgreen] CM
+			*[#lightgreen] BI
+			*[#lightgreen] BIFBANK
+			*[#lightgreen] BANKBK
+		* ATM現鈔提領啟帳
+			*[#lightgreen] 九組ATM
+				*[#lightblue]  PATXN
+				*[#lightblue]  國外匯兌水單
+		* BTT交易
+		* 啟帳程式
+		* 其他ON-LINE交易
 
-**[#Yellow] 帳外調整(蔡欣怡)
-*** 帳外調整交易
-****[#lightgreen] 海外系統 \nDW
-*****[#lightblue] DW (FTP OUT)
-*** 彙整各業務資料併入帳外調整檔
-****[#lightgreen] 各業務
-*****[#lightblue] 海外系統 \nDW (FTP OUT)
+	*[#Yellow] MT950銷帳(蔡欣怡)
+		* 接受MT950銷帳啟帳資料檔
+			*[#lightgreen] MT950系統(設計十組)
+				*[#lightblue] 國內會計
+		* MT950銷帳啟帳
+			*[#lightgreen] MT950系統(設計十組)
+				*[#lightblue] 國內會計
 
-**[#Yellow] 聯往系統(蔡欣怡)
-*** 聯往銷帳交易 \n及即時銷帳副程式
-****[#lightgreen] 各業務
-*****[#lightblue] 國內會計 \nMT950系統(設計十組) \nDW(FTP OUT)
-*** 聯往銷帳 \n聯往計息啟帳 \n產生MT950銷帳檔
-****[#lightgreen] 各業務
+	*[#Yellow] 帳外調整(蔡欣怡)
+		* 帳外調整交易
+			*[#lightgreen] 海外系統 \nDW
+				*[#lightblue] DW (FTP OUT)
+		* 彙整各業務資料併入帳外調整檔
+			*[#lightgreen] 各業務
+				*[#lightblue] 海外系統
+				*[#lightblue] DW (FTP OUT)
 
-'@endmindmap
+	*[#Yellow] 聯往系統(蔡欣怡)
+		* 聯往銷帳交易
+		* 及即時銷帳副程式
+			*[#lightgreen] 各業務
+				*[#lightblue] 國內會計
+				*[#lightblue] MT950系統(設計十組)
+				*[#lightblue] DW(FTP OUT)
+		* 聯往銷帳
+			*[#lightgreen] 各業務
+		* 聯往計息啟帳
+			*[#lightgreen] 各業務
+		* 產生MT950銷帳檔
+			*[#lightgreen] 各業務
+header
+Megabank 
+endheader
+
+center footer Megabank, All Rights Reserved
+
+
 @endmindmap
