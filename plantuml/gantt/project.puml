@@ -1,0 +1,69 @@
+@startgantt
+projectscale weekly
+'saturday are closed
+'sunday are closed
+Project starts the 1st of august 2021
+[資料收集與整理] lasts 18 weeks
+[資料收集與整理] is colored in Lavender/LightBlue
+    [收集業務] lasts 2 weeks
+    [收集列表] lasts 2 weeks
+    [討論列表] lasts 2 weeks
+    [是否納入核轉] lasts 2 weeks
+    [修正與討論] lasts 2 weeks
+    [總結更新] lasts 2 weeks
+    [確認]  lasts 2 weeks
+    [人力及時程評估]  lasts 4 weeks
+-- 調查(結束線) --
+
+[技術選型] lasts 20 weeks
+[技術選型] is colored in Lavender/LightBlue
+    [事先委託調查他行狀況] happens at [資料收集與整理]'s end
+    [他行現狀] lasts 2 weeks
+    [語言調研] lasts 2 weeks
+    [調查傾向] lasts 2 weeks
+    [討論投票] lasts 2 weeks
+    [延伸項目] lasts 8 weeks
+    [方案確認] lasts 4 weeks
+
+    [收集業務]->[收集列表]
+    [收集列表]->[討論列表]
+    [討論列表]->[是否納入核轉]
+    [是否納入核轉]->[修正與討論]
+    [修正與討論]-> [總結更新]
+    [總結更新]-> [確認] 
+    [確認]-> [人力及時程評估]
+
+
+[資料收集與整理]->[技術選型]
+    [他行現狀] starts at [資料收集與整理]'s end
+
+    [他行現狀]-> [語言調研] 
+    [語言調研]-> [調查傾向]
+    [調查傾向]-> [討論投票]
+    [討論投票]-> [延伸項目]
+note bottom
+    小改(只換語言,其他不變)或環境流程皆改變?
+    虛擬機(含管理平台)/實體機/大型主機/其他
+    作業系統
+    資料庫(舊資料轉換?)
+    快取服務
+    訊息佇列
+    版控軟體/版控流程
+    應用程式或網站型式介面
+    測試/佈版/上線/回帶 等相關議題
+    其他
+end note
+    [延伸項目]-> [方案確認]
+
+-- 技術選型 --
+-- 人員調整與語言學習 --
+-- 增設軟硬體 --
+-- 開工(新AP/舊系統調整同時改新的語言版本) --
+-- 單元測試 --
+-- 整合測試 --
+-- 平行測試 --
+-- 分行測試 --
+-- Bug 修改 --
+-- 預備 --
+-- 再預備 --
+@endgantt
